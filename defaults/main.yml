@@ -1,0 +1,4 @@
+---
+# defaults file for lighthouse
+lighthouse_distr_local: "/tmp/lighthouse.zip"
+lighthouse_unarch_dest: "/usr/share"

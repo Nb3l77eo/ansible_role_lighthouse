@@ -1,0 +1,21 @@
+---
+# tasks file for lighthouse
+- name: Install ENV lighthouse
+  become: true
+  ansible.builtin.yum:
+    name:
+      - unzip
+    state: present
+
+- name: Download lighthouse
+  ansible.builtin.get_url:
+    url: "{{ lighthouse_src_distrib }}"
+    dest: "{{ lighthouse_distr_local }}"
+
+- name: unarchive lighthouse
+  become: true
+  ansible.builtin.unarchive:
+    src: "{{ lighthouse_distr_local }}"
+    dest: "{{ lighthouse_unarch_dest }}"
+    remote_src: yes
+  # - "unzip /tmp/lighthouse.zip -d /usr/share"
