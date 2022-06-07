@@ -18,4 +18,3 @@
     src: "{{ lighthouse_distr_local }}"
     dest: "{{ lighthouse_unarch_dest }}"
     remote_src: yes
-  # - "unzip /tmp/lighthouse.zip -d /usr/share"

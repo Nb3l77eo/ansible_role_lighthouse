@@ -1,3 +1,4 @@
 ---
 # vars file for lighthouse
 lighthouse_src_distrib: "https://github.com/VKCOM/lighthouse/archive/refs/heads/master.zip"
+lighthouse_distr_local: "/tmp/lighthouse.zip"
